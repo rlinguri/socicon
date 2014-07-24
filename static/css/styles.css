@@ -1,0 +1,677 @@
+/*
+Colors
+# 222728
+# 2e3436
+# eeeeec
+# BABDB6
+# 669900
+# 99cc00
+*/
+
+/* font
+   ========================================================================== */
+
+@import url('http://fonts.googleapis.com/css?family=Varela+Round');
+@font-face {
+    font-family: 'socicon';
+    src: url(../font/socicon-webfont.eot'.html');
+    src: url('../font/socicon-webfont.eot?#iefix') format('embedded-opentype'),
+         url(../font/socicon-webfont.woff'.html') format('woff'),
+         url(../font/socicon-webfont.ttf'.html') format('truetype'),
+         url('../font/socicon-webfont.svg#sociconregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Base
+   ========================================================================== */
+
+body {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 16px;
+    background: #000;
+    color: #eeeeec;
+}
+
+a {
+    color: #99cc00;
+    text-decoration: none;
+    /* Transitions */
+    -webkit-transition: 0.3s all ease-in-out;
+    -moz-transition: 0.3s all ease-in-out;
+    -ms-transition: 0.3s all ease-in-out;
+    -o-transition: 0.3s all ease-in-out;
+    transition: 0.3s all ease-in-out;
+}
+
+
+p{
+    color: #BABDB6;
+}
+pre, code {
+    font-family: Consolas, 'Liberation Mono', Courier, monospace;
+    color: #EEEEEC;
+    background: rgb(0, 0, 0);
+}
+pre {
+    padding: 1.3em;
+    border-radius: 2px;
+}
+aside {
+    background: #99cc00;
+    padding: 0.4em 1em;
+    margin: 1em 0;
+    border-radius: 2px;
+    color: #2e3436;
+}
+
+
+/* Layout
+   ========================================================================== */
+
+.wrapper {
+    margin: 0 auto;
+    width: auto;
+    padding: 1em;
+}
+
+.box-r {
+    padding: 0;
+}
+.box-l {
+    padding: 0;
+}
+
+
+#site-promo {
+    background: #222728;
+}
+
+#site-content {
+    background: #2e3436;
+}
+
+#site-link {
+    background: #222728;
+    text-align: center;
+}
+
+/* Modules
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+header {
+    margin-bottom: 1em;
+    text-align: center;
+}
+header h1 {
+    margin-top: 30px;
+    margin-bottom: 0;
+    display: inline-block;
+}
+.logo {
+	color:#eeeeec;
+}
+.logo:hover {
+	color:#99cc00;
+}
+header h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: normal;
+    color: #99cc00;
+}
+header .share {
+    text-align: center;
+}
+header .share a {
+    margin-left: 10px;
+    font-family: 'socicon';
+    text-decoration: none;
+    color: #2e3436;
+    background: #BABDB6;
+    padding: 3px;
+    border-radius: 2px;
+}
+header .share a:hover {
+    background: #99CC00;
+}
+
+header .share a:first-child {
+        margin-left: 0;
+    }
+
+#intro {
+    font-weight: 700;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 1em;
+    border-bottom: 3px solid #d3d7cf;
+}
+
+.mention {
+    background: transparent;
+    color: #888A85;
+    font-style: italic;
+    font-size: 0.9em;
+    padding: 20px 0;
+    border: 1px dotted #888A85;
+    border-left: none;
+    border-right: none;
+}
+
+/* Links */
+
+.link {
+    padding: 0 2px;
+
+}
+.link:hover {
+    background: #99CC00;
+    color: #2E3436;
+}
+
+/* Button
+   ========================================================================== */
+
+.pure-button {
+    margin: .5em;
+    -webkit-transition: 0.3s all ease-in-out;
+    -moz-transition: 0.3s all ease-in-out;
+    -ms-transition: 0.3s all ease-in-out;
+    -o-transition: 0.3s all ease-in-out;
+    transition: 0.3s all ease-in-out;
+}
+
+.pure-button-full {
+    background: #99cc00;
+    font-size: 125%;
+    width: 90%;
+}
+
+
+#site-promo .pure-button-full {
+    margin: 1em 0 0;
+    padding: 5%;
+}
+
+#site-link .pure-button {
+    background: #99cc00;
+}
+
+#site-link .pure-button:hover {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#1a000000', GradientType=0);
+    background-image: -webkit-gradient(linear,0 0,0 100%,from(rgba(0, 0, 0, 0)),color-stop(40%,rgba(0, 0, 0, 0.05)),to(rgba(0, 0, 0, 0.1)));
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.05) 40%,rgba(0, 0, 0, 0.1));
+    background-image: -moz-linear-gradient(top,rgba(0,0,0,.05) 0,rgba(0,0,0,.1));
+    background-image: -ms-linear-gradient(transparent,rgba(0,0,0,.05) 40%,rgba(0,0,0,.1));
+    background-image: -o-linear-gradient(transparent,rgba(0,0,0,.05) 40%,rgba(0,0,0,.1));
+    background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.05) 40%,rgba(0, 0, 0, 0.1));
+}
+
+#site-content h2 {
+    margin: 2em 0 1em;
+}
+#site-content h2:first-child {
+    margin: 1em 0 2em;
+}
+
+/* Chart
+   ========================================================================== */
+
+#chart {
+    overflow: hidden;
+}
+
+#chart div {
+    float: left;
+    float: left;
+    width: 12.5%;
+    min-width: 100px;
+    height: 115px;
+    padding: 5px;
+    margin: 0 -1px -1px 0;
+    font-size: 16px;
+    line-height: 1.4;
+    text-align: center;
+}
+#chart span {
+    display: block;
+    text-align: center;
+    color: #D3D7CF;
+}
+#chart div:hover {
+    background: #000000;
+}
+#chart div:hover span {
+    color: #eeeeec;
+}
+
+#chart .name {
+    font-weight: normal;
+}
+#chart .character {
+    font-size: 22px;
+    font-weight: bold;
+}
+.icon{
+    color: #eeeeec;
+    font-family: 'socicon' !important;
+    font-size: 35px;
+    -webkit-font-smoothing: antialiased;
+}
+.icon:hover {
+    color: #99cc00;
+}
+
+/* inline icon
+   ========================================================================== */
+
+.socicon {
+  position: relative;
+  top: 3px;
+  display: inline-block;
+  font-family: 'socicon';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.2em;
+}
+.socicon:empty{
+    width: 1em;
+}
+.socicon-twitter:before { content: "a"; }
+.socicon-facebook:before { content: "b"; }
+.socicon-google:before { content: "c"; }
+.socicon-pinterest:before { content: "d"; }
+.socicon-foursquare:before { content: "e"; }
+.socicon-yahoo:before { content: "f"; }
+.socicon-skype:before { content: "g"; }
+.socicon-yelp:before { content: "h"; }
+.socicon-feedburner:before { content: "i"; }
+.socicon-linkedin:before { content: "j"; }
+.socicon-viadeo:before { content: "k"; }
+.socicon-xing:before { content: "l"; }
+.socicon-myspace:before { content: "m"; }
+.socicon-soundcloud:before { content: "n"; }
+.socicon-spotify:before { content: "o"; }
+.socicon-grooveshark:before { content: "p"; }
+.socicon-lastfm:before { content: "q"; }
+.socicon-youtube:before { content: "r"; }
+.socicon-vimeo:before { content: "s"; }
+.socicon-dailymotion:before { content: "t"; }
+.socicon-vine:before { content: "u"; }
+.socicon-flickr:before { content: "v"; }
+.socicon-500px:before { content: "w"; }
+.socicon-instagram:before { content: "x"; }
+.socicon-wordpress:before { content: "y"; }
+.socicon-tumblr:before { content: "z"; }
+.socicon-blogger:before { content: "A"; }
+.socicon-technorati:before { content: "B"; }
+.socicon-reddit:before { content: "C"; }
+.socicon-dribbble:before { content: "D"; }
+.socicon-stumbleupon:before { content: "E"; }
+.socicon-digg:before { content: "F"; }
+.socicon-envato:before { content: "G"; }
+.socicon-behance:before { content: "H"; }
+.socicon-delicious:before { content: "I"; }
+.socicon-deviantart:before { content: "J"; }
+.socicon-forrst:before { content: "K"; }
+.socicon-play:before { content: "L"; }
+.socicon-zerply:before { content: "M"; }
+.socicon-wikipedia:before { content: "N"; }
+.socicon-apple:before { content: "O"; }
+.socicon-flattr:before { content: "P"; }
+.socicon-github:before { content: "Q"; }
+.socicon-chimein:before { content: "R"; }
+.socicon-friendfeed:before { content: "S"; }
+.socicon-newsvine:before { content: "T"; }
+.socicon-identica:before { content: "U"; }
+.socicon-bebo:before { content: "V"; }
+.socicon-zynga:before { content: "W"; }
+.socicon-steam:before { content: "X"; }
+.socicon-xbox:before { content: "Y"; }
+.socicon-windows:before { content: "Z"; }
+.socicon-outlook:before { content: "1"; }
+.socicon-coderwall:before { content: "2"; }
+.socicon-tripadvisor:before { content: "3"; }
+.socicon-netcodes:before { content: "4"; }
+.socicon-easid:before { content: "5"; }
+
+/* MEDIA QUERIES */
+
+@media (min-width: 533px) {
+    .wrapper {
+        max-width: 520px;
+    }
+    header {
+        text-align: left;
+    }
+    header .share {
+        text-align: right;
+    }
+    .box-r {
+    padding: 0 1.5em 0 0;
+    }
+    .box-l {
+        padding: 0 0 0 1.5em;
+    }
+}
+@media (min-width: 768px) {
+    .wrapper {
+        max-width: 750px;
+    }
+}
+@media (min-width: 992px){
+    .wrapper {
+        max-width: 970px;
+    }
+    .wrapper #chart div {
+        min-width: 125px;
+    }
+}
+@media (min-width: 1200px){
+    .wrapper {
+        max-width: 1170px;
+    }
+}
+
+/* Generator
+   ========================================================================== */
+#canvas {
+    position: absolute;
+    visibility: hidden;
+    background-color: transparent;
+}
+#images{
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: inset 0 2px 2px 0 rgba(0,0,0,.2);
+    text-align: center;
+}
+#images img {
+    margin: 2px;
+}
+.row {
+    margin-bottom: 1em;
+}
+.row:last-child{
+    margin-bottom: 0;
+}
+small.pure-form-message-inline {
+    font-size: 80%;
+}
+.pure-form legend {
+    border-bottom: 1px solid #555;
+    color: rgb(102, 102, 102);
+}
+.inner{
+    padding: 1em;
+}
+.center{
+    text-align: center;
+}
+
+
+/* minicolors
+   ========================================================================== */
+
+.minicolors {
+        position: relative;
+}
+
+.minicolors-swatch {
+        position: absolute;
+        vertical-align: middle;
+        background: url(../img/jquery.minicolors.png) -80px 0;
+        border: solid 1px #ccc;
+        cursor: text;
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+}
+
+.minicolors-swatch-color {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+}
+
+.minicolors input[type=hidden] + .minicolors-swatch {
+        width: 28px;
+        position: static;
+        cursor: pointer;
+}
+
+/* Panel */
+.minicolors-panel {
+        position: absolute;
+        width: 173px;
+        height: 152px;
+        background: white;
+        border: solid 1px #CCC;
+        box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+        z-index: 99999;
+        -moz-box-sizing: content-box;
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+        display: none;
+}
+
+.minicolors-panel.minicolors-visible {
+        display: block;
+}
+
+/* Panel positioning */
+.minicolors-position-top .minicolors-panel {
+        top: -154px;
+}
+
+.minicolors-position-right .minicolors-panel {
+        right: 0;
+}
+
+.minicolors-position-bottom .minicolors-panel {
+        top: auto;
+}
+
+.minicolors-position-left .minicolors-panel {
+        left: 0;
+}
+
+.minicolors-with-opacity .minicolors-panel {
+        width: 194px;
+}
+
+.minicolors .minicolors-grid {
+        position: absolute;
+        top: 1px;
+        left: 1px;
+        width: 150px;
+        height: 150px;
+        background: url(../img/jquery.minicolors.png) -120px 0;
+        cursor: crosshair;
+}
+
+.minicolors .minicolors-grid-inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 150px;
+        height: 150px;
+        background: none;
+}
+
+.minicolors-slider-saturation .minicolors-grid {
+        background-position: -420px 0;
+}
+
+.minicolors-slider-saturation .minicolors-grid-inner {
+        background: url(../img/jquery.minicolors.png) -270px 0;
+}
+
+.minicolors-slider-brightness .minicolors-grid {
+        background-position: -570px 0;
+}
+
+.minicolors-slider-brightness .minicolors-grid-inner {
+        background: black;
+}
+
+.minicolors-slider-wheel .minicolors-grid {
+        background-position: -720px 0;
+}
+
+.minicolors-slider,
+.minicolors-opacity-slider {
+        position: absolute;
+        top: 1px;
+        left: 152px;
+        width: 20px;
+        height: 150px;
+        background: white url(../img/jquery.minicolors.png) 0 0;
+        cursor: row-resize;
+}
+
+.minicolors-slider-saturation .minicolors-slider {
+        background-position: -60px 0;
+}
+
+.minicolors-slider-brightness .minicolors-slider {
+        background-position: -20px 0;
+}
+
+.minicolors-slider-wheel .minicolors-slider {
+        background-position: -20px 0;
+}
+
+.minicolors-opacity-slider {
+        left: 173px;
+        background-position: -40px 0;
+        display: none;
+}
+
+.minicolors-with-opacity .minicolors-opacity-slider {
+        display: block;
+}
+
+/* Pickers */
+.minicolors-grid .minicolors-picker {
+        position: absolute;
+        top: 70px;
+        left: 70px;
+        width: 12px;
+        height: 12px;
+        border: solid 1px black;
+        border-radius: 10px;
+        margin-top: -6px;
+        margin-left: -6px;
+        background: none;
+}
+
+.minicolors-grid .minicolors-picker > div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 8px;
+        height: 8px;
+        border-radius: 8px;
+        border: solid 2px white;
+        -moz-box-sizing: content-box;
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+}
+
+.minicolors-picker {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 18px;
+        height: 2px;
+        background: white;
+        border: solid 1px black;
+        margin-top: -2px;
+        -moz-box-sizing: content-box;
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+}
+
+/* Inline controls */
+.minicolors-inline {
+        display: inline-block;
+}
+
+.minicolors-inline .minicolors-input {
+        display: none !important;
+}
+
+.minicolors-inline .minicolors-panel {
+        position: relative;
+        top: auto;
+        left: auto;
+        box-shadow: none;
+        z-index: auto;
+        display: inline-block;
+}
+
+/* Default theme */
+.minicolors-theme-default .minicolors-swatch {
+        top: 8px;
+        left: 5px;
+        width: 20px;
+        height: 20px;
+        border-radius: 5px;
+        overflow: hidden;
+}
+.minicolors-theme-default.minicolors-position-right .minicolors-swatch {
+        left: auto;
+        right: 5px;
+}
+.minicolors-theme-default.minicolors {
+        width: auto;
+        display: inline-block;
+}
+.minicolors-theme-default .minicolors-input {
+        /*height: 20px;*/
+        width: auto;
+        display: inline-block;
+        padding-left: 31px !important;
+}
+.minicolors-theme-default.minicolors-position-right .minicolors-input {
+        padding-right: 26px;
+        padding-left: inherit;
+}
+
+/* Bootstrap theme */
+.minicolors-theme-bootstrap .minicolors-swatch {
+        top: 8px;
+        left: 5px;
+        width: 20px;
+        height: 20px;
+        border-radius: 5px;
+        overflow: hidden;
+}
+.minicolors-theme-bootstrap.minicolors-position-right .minicolors-swatch {
+        left: auto;
+        right: 3px;
+}
+.minicolors-theme-bootstrap .minicolors-input {
+        padding-left: 44px;
+}
+.minicolors-theme-bootstrap.minicolors-position-right .minicolors-input {
+        padding-right: 44px;
+        padding-left: 12px;
+}
+
